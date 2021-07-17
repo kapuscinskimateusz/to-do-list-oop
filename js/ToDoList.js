@@ -1,6 +1,7 @@
 export class ToDoList {
-  constructor(input, ul) {
+  constructor(input, span, ul) {
     this.input = input;
+    this.span = span;
     this.ul = ul;
     this.tasks = [];
   }
@@ -37,5 +38,7 @@ export class ToDoList {
       task.dataset.key = key;
       this.ul.appendChild(task);
     });
+
+    this.span.textContent = this.tasks.length;
   }
 }
