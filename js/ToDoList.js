@@ -41,4 +41,11 @@ export class ToDoList {
 
     this.span.textContent = this.tasks.length;
   }
+
+  searchTask(e) {
+    const searchText = e.target.value.toLowerCase();
+    let tasks = this.tasks.filter((li) => li.textContent.toLowerCase().includes(searchText));
+    this.ul.textContent = '';
+    tasks.forEach(li => this.ul.appendChild(li));
+  }
 }

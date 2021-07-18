@@ -10,3 +10,7 @@ const toDoList = new ToDoList(input, span, ul);
 form.addEventListener("submit", (e) => {
   toDoList.addTask(e);
 });
+
+input.addEventListener("input", (e) => {
+  toDoList.searchTask(e);
+});

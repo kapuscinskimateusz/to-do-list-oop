@@ -42,20 +42,20 @@ button {
 }
 
 form button {
-  margin-left: 10px;
+  margin-left: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 form .addBtn {
-  border: 2px solid cadetblue;
-  background-color: cadetblue;
+  border: 2px solid green;
+  background-color: green;
   color: #fff;
 }
 
 form .addBtn:hover {
   background-color: transparent;
-  color: cadetblue;
+  color: green;
 }
 
 form .removeBtn {
