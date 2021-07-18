@@ -41,10 +41,6 @@ button {
   font-size: 2rem;
 }
 
-form input {
-  max-width: 100%;
-}
-
 form button {
   margin-left: 5px;
   cursor: pointer;
